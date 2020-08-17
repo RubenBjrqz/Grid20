@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Grid</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Columnas de mismo ancho</h1>
+        <div class="row">
+            <div class="col" style="background-color: cadetblue;">
+                <p>Columna 1</p>
+            </div>
+            <div class="col" style="background-color: darkgoldenrod;">
+                <p>Columna 2</p>
+            </div>
+            <div class="col" style="background-color: green;">
+                <p>Columna 3</p>
+            </div>
+        </div> 
+
+        <h3>Columnas de mismo ancho, con breakpoints</h3>
+        <!-- 
+            xs: extra small
+            sm: small
+            md: medium
+            lg: large
+            xl: extra large 
+        </div>
+        -->
+        <div class="row">
+            <div class="col-md">
+                <p>Columna 1</p>
+            </div>
+            <div class="col-md">
+                <p>Columna 2</p>
+            </div>
+            <div class="col-md">
+                <p>Columna 3</p>
+            </div>
+        </div>
+
+        <h3>Columnas con salto de linea</h3>
+        <div class="row">
+            <div class="col">
+                <p>Columna 1</p>
+            </div>
+            <div class="col">
+                <p>Columna 2</p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col">
+                <p>Columna 3</p>
+            </div>
+            <div class="col">
+                <p>Columna 4</p>
+            </div>
+            <div class="col">
+                <p>Columna 5</p>
+            </div>
+        </div>
+        
+        <h3>Columnas de ancho definido</h3>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12" style="background-color: darkorchid;">
+                <p>Columna 1</p>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-8" style="background-color: blue;">
+                <p>Columna 2</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-4" style="background-color: red;">
+                <p>Columna 3</p>
+            </div>
+        </div>
+
+        <h3>Columnas de ancho variable</h3>
+        <div class="row">
+            <div class="col-md-2" style="background-color: darkslategray;">
+                <p>Columna 1</p>
+            </div>
+            <div class="col-md-auto" style="background-color: blue;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda praesentium harum iusto temporibus quo eius ab eum molestias porro eaque provident qui cumque, quaerat facilis consequatur autem veniam. Itaque?</p>
+            </div>
+            <div class="col-md-2" style="background-color: red;">
+                <p>Columna 2</p>
+            </div>
+        </div>
+
+        <h3>Columnas de ancho variable</h3>
+        <div class="row row-col">
+            <div class="col" style="background-color: darkorchid;">
+                <p>Columna 1</p>
+            </div>
+            <div class="col" style="background-color: blue;">
+                <p>Columna 2</p>
+            </div>
+            <div class="col" style="background-color: red;">
+                <p>Columna 3</p>
+            </div>
+            <div class="col" style="background-color: darkcyan;">
+                <p>Columna 4</p>
+            </div>
+        </div>
+        
+        <h3>Alineacion horizontal</h3>
+        <h4>Start</h4>
+        <div class="row justify-content-around">
+            <div class="col-4" style="background-color: red;">
+                <p>Columna 1</p>
+            </div>
+            <div class="col-4" style="background-color: darkcyan;">
+                <p>Columna 2</p>
+            </div>
+        </div>
+        <h4>Between</h4>
+        <div class="row justify-content-between">
+            <div class="col-4" style="background-color: red;">
+                <p>Columna 1</p>
+            </div>
+            <div class="col-4" style="background-color: darkcyan;">
+                <p>Columna 2</p>
+            </div>
+        </div>
+        <h3>Orden</h3>
+        <div class="row">
+            <div class="col-1">
+                <p>Primera (1)</p>
+            </div>
+            <div class="col order-11">
+                <p>Segunda (11)</p>
+            </div>
+            <div class="col order-2">
+                <p>Tercera (2)</p>
+            </div>
+        </div>
+        <h3>Offset</h3>
+        <div class="row">
+            <div class="col-md-4" style="background-color: darkolivegreen;">
+                <p>Columna 1</p>
+            </div>
+            <div class="col-md-3 offset-md-5" style="background-color: gold;">
+                <p>Columna 2</p>
+            </div>
+        </div>
+        <h3>Nesting</h3>
+        <div class="row">
+            <div class="col">
+                <p>Columna 1</p>
+                <div class="row">
+                    <div class="col">
+                        <p>Columna a</p>
+                    </div>
+                    <div class="col">
+                        <p>Columna b</p>
+                    </div>
+                    <div class="col">
+                        <p>Columna c</p>
+                    </div>
+                </div>
+            <div class="col">
+                <p>Columna 2</p> 
+            </div> 
+            </div>
+               
+            
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
